@@ -30,3 +30,9 @@ def unauthorized() -> str:
     """ To abort an unauthorized endpoint
     """
     abort(401)
+
+@app_views.route('/forbidden/', strict_slashes=False)
+def forbidden() -> str:
+    """ To abort an forbidden request
+    """
+    abort(403)
