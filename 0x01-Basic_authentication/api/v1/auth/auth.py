@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from flask import request
+from flask import Flask, request
 from typing import List, TypeVar
 
 
